@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#705A38"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/image2">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/add_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginBottom="454dp"
+        android:fontFamily="@font/nunitoextrabold"
+        android:text="Add Your Self"
+        android:textAlignment="center"
+        android:textColor="#C7CDCD"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="290dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/shape_rounded2"
+        android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/inputNIM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/shape_rounded1"
+        android:backgroundTint="#E2E4E1"
+        android:fontFamily="@font/nunitosemibolditalic"
+        android:hint="NIM"
+        android:inputType="number"
+        android:paddingLeft="20dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textColor="@color/black"
+        android:textColorHint="#676E6E"
+        android:textSize="20dp"
+        android:textStyle="normal|italic" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/inputNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/shape_rounded1"
+        android:backgroundTint="#E2E4E1"
+        android:fontFamily="@font/nunitosemibolditalic"
+        android:hint="Nama"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textColor="@color/black"
+        android:textColorHint="#676E6E"
+        android:textSize="20dp"
+        android:textStyle="normal|italic" />
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/inputKelas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/shape_rounded1"
+        android:backgroundTint="#E2E4E1"
+        android:fontFamily="@font/nunitosemibolditalic"
+        android:hint="Kelas"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textColor="@color/black"
+        android:textColorHint="#676E6E"
+        android:textSize="20dp"
+        android:textStyle="normal|italic" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputIPK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/shape_rounded1"
+            android:backgroundTint="#E2E4E1"
+            android:fontFamily="@font/nunitosemibolditalic"
+            android:hint="IPK"
+            android:inputType="numberDecimal"
+            android:paddingLeft="20dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/black"
+            android:textColorHint="#676E6E"
+            android:textSize="20dp"
+            android:textStyle="normal|italic" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="580dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="#E3D4A8"
+        android:onClick="exitClick"
+        android:padding="10dp"
+        android:text="Exit"
+        android:textColor="#FFFFFF" />
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="580dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="2dp"
+        android:backgroundTint="#A87324"
+        android:onClick="addClick"
+        android:padding="10dp"
+        android:text="add"
+        android:textColor="#FFFFFF" />
+    </LinearLayout>
+</RelativeLayout>
